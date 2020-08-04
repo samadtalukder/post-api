@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="routing add , verify email add" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fBnQbrmgk1FmwtcJymhbMj3liA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/layout" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/layout" />
+      <recent name="$PROJECT_DIR$/src/css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="" />
+      <created>1595700337546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595700337546</updated>
+      <workItem from="1595700339401" duration="1459000" />
+      <workItem from="1595739872471" duration="272000" />
+      <workItem from="1595777636509" duration="3695000" />
+      <workItem from="1595786668103" duration="654000" />
+      <workItem from="1595862782994" duration="9844000" />
+      <workItem from="1595952574686" duration="7777000" />
+      <workItem from="1596029401830" duration="599000" />
+      <workItem from="1596522912451" duration="1021000" />
+      <workItem from="1596525893658" duration="3919000" />
+    </task>
+    <task id="LOCAL-00001" summary="api add">
+      <created>1595739945233</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595739945233</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new registration api add">
+      <created>1595786707296</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595786707296</updated>
+    </task>
+    <task id="LOCAL-00003" summary="routing add , verify email add">
+      <created>1596530873212</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596530873212</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="api add" />
+    <MESSAGE value="new registration api add" />
+    <MESSAGE value="routing add , verify email add" />
+    <option name="LAST_COMMIT_MESSAGE" value="routing add , verify email add" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="403" y="198" width="615" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596529391352">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state x="403" y="198" width="615" height="396" key="#com.intellij.fileTypes.FileTypeChooser/65.27.1301.741@65.27.1301.741" timestamp="1596529391352" />
+    <state x="487" y="140" width="447" height="513" key="FileChooserDialogImpl" timestamp="1595700764853">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state x="487" y="140" width="447" height="513" key="FileChooserDialogImpl/65.27.1301.741@65.27.1301.741" timestamp="1595700764852" />
+    <state x="576" y="296" key="Github.ShareDialog" timestamp="1595700784224">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state x="576" y="296" key="Github.ShareDialog/65.27.1301.741@65.27.1301.741" timestamp="1595700784224" />
+    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596530901784">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/65.27.1301.741@65.27.1301.741" timestamp="1596530901784" />
+    <state x="496" y="311" width="428" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596525909803">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state x="496" y="311" width="428" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/65.27.1301.741@65.27.1301.741" timestamp="1596525909803" />
+    <state x="379" y="175" width="672" height="677" key="run.anything.popup" timestamp="1595883304913">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state x="379" y="175" width="672" height="677" key="run.anything.popup/65.27.1301.741@65.27.1301.741" timestamp="1595883304913" />
+    <state x="378" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1595965294461">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state x="378" y="89" width="672" height="678" key="search.everywhere.popup/65.27.1301.741@65.27.1301.741" timestamp="1595965294461" />
+  </component>
+</project>
