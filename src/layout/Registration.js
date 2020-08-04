@@ -18,7 +18,10 @@ class Registration extends React.Component {
         let registerData = {
             Email: this.refs.Email.value,
             Password: this.refs.Password.value,
-        }
+        };
+
+        localStorage.setItem('email', this.refs.Email.value);
+
 
         console.log(registerData);
 
@@ -51,11 +54,11 @@ class Registration extends React.Component {
     }
 
     render() {
-        const {printMessage, isRegister} = this.state;
+        const {isRegister} = this.state;
 
         if (isRegister) {
-            console.log("Redirect Call")
-            return <Redirect to='/verify'/>
+            console.log("Redirect Call");
+            window.location.href = '/verify'
         }
 
         return (
@@ -100,7 +103,7 @@ class Registration extends React.Component {
                                     </div>
 
                                     <div className="card-body">
-                                        {printMessage && true ? printMessage.response ? printMessage.response.status : 'Success' : 'no data'}
+                                        { isRegister ? 'Success' : ''}
                                     </div>
 
                                 </form>
