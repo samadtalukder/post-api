@@ -1,6 +1,18 @@
 import React from "react";
 
 class VerifyEmail extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            email: localStorage.getItem("email")
+        };
+    }
+    componentDidMount() {
+
+    }
+
     render() {
         return (
             <div className="container">
@@ -13,7 +25,7 @@ class VerifyEmail extends React.Component {
 
                             <header className="card-header">
 
-                                <h4 className="card-title mt-2">Verify OTP</h4>
+                                <h4 className="card-title mt-2">Verify OTP send to {this.state.email}</h4>
 
                             </header>
 
