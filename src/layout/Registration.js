@@ -4,6 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import axios from 'axios';
 
+
+
 class Registration extends React.Component {
 
     constructor(props) {
@@ -30,14 +32,12 @@ class Registration extends React.Component {
         const header = {
             'Content-Type': 'application/json',
             'x-api-key': '2020'
-
         };
 
         let data = JSON.stringify({
             Email: this.refs.Email.value,
             Password: this.refs.Password.value,
-        }
-        )
+        });
 
         axios.post('http://103.16.73.242:5000/api/registration', data, {
             headers: header
@@ -48,7 +48,7 @@ class Registration extends React.Component {
                 return res;
             }
         }).catch(error => {
-            if (error.response && error.response.status >= 400 && error.response.status < 500) {
+            if (error.response && (error.response.status >= 400 && error.response.status < 500)) {
                 toast.error(error.response.data.message);
             } else {
                 toast.error('Something went wrong. please try again later!');
