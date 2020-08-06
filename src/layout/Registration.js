@@ -25,7 +25,6 @@ class Registration extends React.Component {
 
         localStorage.setItem('email', this.refs.Email.value);
 
-
         console.log(registerData);
 
         /*const requestOptions = {
@@ -37,34 +36,29 @@ class Registration extends React.Component {
             body: JSON.stringify(registerData),
         };*/
 
-        const requestOptions = {
-            headers: {
-                'Content-Type': 'application/json',
-                'x-api-key': '2020'
-            },
-            body: JSON.stringify(registerData),
+
+        const header = {
+            'Content-Type': 'application/json',
+            'x-api-key': '2020'
+
         };
 
-        console.log(requestOptions);
+        let data = JSON.stringify({
+                Email: this.refs.Email.value,
+                Password: this.refs.Password.value,
+            }
+        )
+
+        axios.post('http://103.16.73.242:5000/api/registration', data, {
+            headers: header
+        }).then(res => {
+            console.log(res)
+            console.log(res.data)
 
 
-        axios.post('http://103.16.73.242:5000/api/registration', requestOptions).then(res => {
-                if (res.status === 200) {
-                    console.log("Response: ", res);
-                    toast.success("Registration Success");
-                    this.setState({isRegister: true});
-                    return res;
-
-                } else {
-                    toast.error("Registration Failed");
-                    console.log("Registration Failed");
-                }
-
-                console.log(res)
-                console.log(res.data)
-                console.log(res.data.message)
-
-            })
+        }).catch(error => {
+            console.log(error)
+        })
 
         /*fetch('http://103.16.73.242:5000/api/registration', requestOptions)
             .then(response => {

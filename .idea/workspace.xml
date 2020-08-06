@@ -10,14 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="routing add , verify email add">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="add axios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/Registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/VerifyEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/VerifyEmail.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +73,7 @@
       <workItem from="1596522912451" duration="1021000" />
       <workItem from="1596525893658" duration="9216000" />
       <workItem from="1596609296660" duration="6539000" />
-      <workItem from="1596688544988" duration="5654000" />
+      <workItem from="1596688544988" duration="6997000" />
     </task>
     <task id="LOCAL-00001" summary="api add">
       <created>1595739945233</created>
@@ -108,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596535889963</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add axios">
+      <created>1596698737315</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596698737315</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +132,8 @@
     <MESSAGE value="api add" />
     <MESSAGE value="new registration api add" />
     <MESSAGE value="routing add , verify email add" />
-    <option name="LAST_COMMIT_MESSAGE" value="routing add , verify email add" />
+    <MESSAGE value="add axios" />
+    <option name="LAST_COMMIT_MESSAGE" value="add axios" />
   </component>
   <component name="WindowStateProjectService">
     <state x="403" y="198" width="615" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596529391352">
@@ -149,10 +152,10 @@
       <screen x="65" y="27" width="1301" height="741" />
     </state>
     <state x="346" y="159" width="728" height="475" key="MultipleFileMergeDialog/65.27.1301.741@65.27.1301.741" timestamp="1596535907543" />
-    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596530901784">
+    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596698753226">
       <screen x="65" y="27" width="1301" height="741" />
     </state>
-    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/65.27.1301.741@65.27.1301.741" timestamp="1596530901784" />
+    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/65.27.1301.741@65.27.1301.741" timestamp="1596698753226" />
     <state x="496" y="311" width="428" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596525909803">
       <screen x="65" y="27" width="1301" height="741" />
     </state>
