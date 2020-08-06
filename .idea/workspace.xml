@@ -10,7 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="add axios">
+    <list default="true" id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="print error message using axios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/Registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Registration.js" afterDir="false" />
     </list>
@@ -73,7 +73,7 @@
       <workItem from="1596522912451" duration="1021000" />
       <workItem from="1596525893658" duration="9216000" />
       <workItem from="1596609296660" duration="6539000" />
-      <workItem from="1596688544988" duration="9191000" />
+      <workItem from="1596688544988" duration="12086000" />
     </task>
     <task id="LOCAL-00001" summary="api add">
       <created>1595739945233</created>
@@ -117,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596700134605</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="print error message using axios">
+      <created>1596703876562</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596703876562</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +147,8 @@
     <MESSAGE value="new registration api add" />
     <MESSAGE value="routing add , verify email add" />
     <MESSAGE value="add axios" />
-    <option name="LAST_COMMIT_MESSAGE" value="add axios" />
+    <MESSAGE value="print error message using axios" />
+    <option name="LAST_COMMIT_MESSAGE" value="print error message using axios" />
   </component>
   <component name="WindowStateProjectService">
     <state x="403" y="198" width="615" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596529391352">
@@ -159,10 +167,10 @@
       <screen x="65" y="27" width="1301" height="741" />
     </state>
     <state x="346" y="159" width="728" height="475" key="MultipleFileMergeDialog/65.27.1301.741@65.27.1301.741" timestamp="1596535907543" />
-    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596700141850">
+    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596703886167">
       <screen x="65" y="27" width="1301" height="741" />
     </state>
-    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/65.27.1301.741@65.27.1301.741" timestamp="1596700141850" />
+    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/65.27.1301.741@65.27.1301.741" timestamp="1596703886167" />
     <state x="496" y="311" width="428" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596525909803">
       <screen x="65" y="27" width="1301" height="741" />
     </state>
