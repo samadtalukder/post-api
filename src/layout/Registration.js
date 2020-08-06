@@ -1,6 +1,6 @@
 import React from "react";
-import {BrowserRouter as Redirect, Link} from "react-router-dom";
-import {ToastContainer, toast} from 'react-toastify';
+import { BrowserRouter as Redirect, Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import axios from 'axios';
 
@@ -34,27 +34,25 @@ class Registration extends React.Component {
         };
 
         let data = JSON.stringify({
-                Email: this.refs.Email.value,
-                Password: this.refs.Password.value,
-            }
+            Email: this.refs.Email.value,
+            Password: this.refs.Password.value,
+        }
         )
 
         axios.post('http://103.16.73.242:5000/api/registration', data, {
             headers: header
         }).then(res => {
             if (res.status === 200) {
-                console.log("Response: ", res);
                 toast.success("Registration Success");
-                this.setState({isRegister: true});
+                this.setState({ isRegister: true });
                 return res;
-
-            } else {
-                toast.error("Registration Failed");
-                console.log("Registration Failed");
             }
         }).catch(error => {
-            toast.error(error.response.data.response.message);
-            console.log(error.response.data.response.message)
+            if (error.response && error.response.status >= 400 && error.response.status < 500) {
+                toast.error(error.response.data.message);
+            } else {
+                toast.error('Something went wrong. please try again later!');
+            }
         })
 
         /*const requestOptions = {
@@ -87,7 +85,7 @@ class Registration extends React.Component {
     }
 
     render() {
-        const {isRegister, printMessage} = this.state;
+        const { isRegister, printMessage } = this.state;
 
         if (isRegister) {
             this.props.history.push("/verify");
@@ -117,7 +115,7 @@ class Registration extends React.Component {
 
                                         <label htmlFor="Email">Email address</label>
 
-                                        <input ref="Email" type="email" className="form-control" placeholder=""/>
+                                        <input ref="Email" type="email" className="form-control" placeholder="" />
 
                                     </div>
 
@@ -125,15 +123,15 @@ class Registration extends React.Component {
 
                                         <label htmlFor="Password">Password</label>
 
-                                        <input ref="Password" className="form-control" type="password"/>
+                                        <input ref="Password" className="form-control" type="password" />
 
                                     </div>
 
                                     <div className="form-group">
                                         <button type="submit" name="action"
-                                                className="btn btn-primary btn-block"> Register
+                                            className="btn btn-primary btn-block"> Register
                                         </button>
-                                        <ToastContainer/>
+                                        <ToastContainer />
                                     </div>
 
                                     <div className="card-body">
