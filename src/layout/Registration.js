@@ -1,5 +1,8 @@
 import React from "react";
 import {BrowserRouter as Redirect, Link} from "react-router-dom";
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+import axios from 'axios';
 
 class Registration extends React.Component {
 
@@ -25,8 +28,16 @@ class Registration extends React.Component {
 
         console.log(registerData);
 
-        const requestOptions = {
+        /*const requestOptions = {
             method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': '2020'
+            },
+            body: JSON.stringify(registerData),
+        };*/
+
+        const requestOptions = {
             headers: {
                 'Content-Type': 'application/json',
                 'x-api-key': '2020'
@@ -36,29 +47,50 @@ class Registration extends React.Component {
 
         console.log(requestOptions);
 
-        fetch('http://103.16.73.242:5000/api/registration', requestOptions)
+
+        axios.post('http://103.16.73.242:5000/api/registration', requestOptions).then(res => {
+                if (res.status === 200) {
+                    console.log("Response: ", res);
+                    toast.success("Registration Success");
+                    this.setState({isRegister: true});
+                    return res;
+
+                } else {
+                    toast.error("Registration Failed");
+                    console.log("Registration Failed");
+                }
+
+                console.log(res)
+                console.log(res.data)
+                console.log(res.data.message)
+
+            })
+
+        /*fetch('http://103.16.73.242:5000/api/registration', requestOptions)
             .then(response => {
                 if (response.status === 200) {
                     console.log("Response: ", response);
+                    toast.success("Registration Success");
                     this.setState({isRegister: true});
                     return response;
 
                 } else {
-                    console.log("Something Wrong");
+                    toast.error("Registration Failed");
+                    console.log("Registration Failed");
                 }
             })
             .then(data => {
                 this.setState({printMessage: data})
                 console.log(data)
-            });
+            });*/
     }
 
     render() {
-        const {isRegister} = this.state;
+        const {isRegister, printMessage} = this.state;
 
         if (isRegister) {
-            console.log("Redirect Call");
-            window.location.href = '/verify'
+            this.props.history.push("/verify");
+            //window.location.href = '/verify'
         }
 
         return (
@@ -100,10 +132,12 @@ class Registration extends React.Component {
                                         <button type="submit" name="action"
                                                 className="btn btn-primary btn-block"> Register
                                         </button>
+                                        <ToastContainer/>
                                     </div>
 
                                     <div className="card-body">
-                                        { isRegister ? 'Success' : ''}
+                                        Response
+                                        Message: {printMessage && true ? printMessage.response ? printMessage.response.message : 'Success' : 'no data'}
                                     </div>
 
                                 </form>

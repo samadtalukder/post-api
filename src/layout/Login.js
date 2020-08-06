@@ -1,9 +1,72 @@
 import React from "react";
 
+
+const validEmail = RegExp(
+    /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,15}/g
+);
+
+const validateForm = error => {
+    let valid = true;
+    Object.values(error).forEach(value => value.length > 0 && (valid = false));
+    return valid;
+}
+
 class Login extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            email: '',
+            password:'',
+            errors: null
+        }
+    }
+
+    handleChangeEmail = email => {
+        let prevState = {...this.state};
+
+        if (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(prevState.email) === false) {
+            prevState.errors = "Invalid Email"
+        } else {
+            prevState.errors = null
+        }
+
+        prevState[email.target.id] = email.target.value;
+        this.setState(prevState)
+
+    }
+
+    handleChangePassword = password => {
+        let prevState = {...this.state};
+
+        if (password) {
+            prevState.errors = "Invalid Email"
+        } else {
+            prevState.errors = null
+        }
+
+        prevState[password.target.id] = password.target.value;
+        this.setState(prevState)
+
+    }
+
     render() {
-        return(
+
+        return (
             <div className="container">
+                <div className="form-group">
+
+                    <label htmlFor="Email">Email address</label>
+
+                    <input name='email' id='email' value={this.state.email} onChange={this.handleChangeEmail} type="email" className="form-control" placeholder=""/>
+                    <div className="text-danger">{this.state.errors}</div>
+                   
+                </div>
+               {/* <input type="email" name='email' value={this.state.email} onChange={this.handleChangeEmail}/>*/}
+
+            </div>
+            /*<div className="container">
 
                 <div className="row justify-content-center">
 
@@ -38,9 +101,10 @@ class Login extends React.Component {
                                     </div>
 
                                     <div className="form-group">
-                                        <button type="submit" name="action" className="btn btn-primary btn-block"> Sign In</button>
+                                        <button type="submit" name="action" className="btn btn-primary btn-block"> Sign
+                                            In
+                                        </button>
                                     </div>
-
 
 
                                 </form>
@@ -53,7 +117,7 @@ class Login extends React.Component {
 
                 </div>
 
-            </div>
+            </div>*/
         );
     }
 }

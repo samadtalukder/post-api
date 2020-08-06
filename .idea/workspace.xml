@@ -10,7 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="routing add , verify email add" />
+    <list default="true" id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="routing add , verify email add">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/VerifyEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/VerifyEmail.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +76,9 @@
       <workItem from="1595952574686" duration="7777000" />
       <workItem from="1596029401830" duration="599000" />
       <workItem from="1596522912451" duration="1021000" />
-      <workItem from="1596525893658" duration="3919000" />
+      <workItem from="1596525893658" duration="9216000" />
+      <workItem from="1596609296660" duration="6539000" />
+      <workItem from="1596688544988" duration="5654000" />
     </task>
     <task id="LOCAL-00001" summary="api add">
       <created>1595739945233</created>
@@ -91,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596530873212</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="routing add , verify email add">
+      <created>1596535889963</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596535889963</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +145,10 @@
       <screen x="65" y="27" width="1301" height="741" />
     </state>
     <state x="576" y="296" key="Github.ShareDialog/65.27.1301.741@65.27.1301.741" timestamp="1595700784224" />
+    <state x="346" y="159" width="728" height="475" key="MultipleFileMergeDialog" timestamp="1596535907543">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state x="346" y="159" width="728" height="475" key="MultipleFileMergeDialog/65.27.1301.741@65.27.1301.741" timestamp="1596535907543" />
     <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596530901784">
       <screen x="65" y="27" width="1301" height="741" />
     </state>
