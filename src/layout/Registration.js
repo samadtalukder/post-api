@@ -27,16 +27,6 @@ class Registration extends React.Component {
 
         console.log(registerData);
 
-        /*const requestOptions = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'x-api-key': '2020'
-            },
-            body: JSON.stringify(registerData),
-        };*/
-
-
         const header = {
             'Content-Type': 'application/json',
             'x-api-key': '2020'
@@ -52,13 +42,30 @@ class Registration extends React.Component {
         axios.post('http://103.16.73.242:5000/api/registration', data, {
             headers: header
         }).then(res => {
-            console.log(res)
-            console.log(res.data)
+            if (res.status === 200) {
+                console.log("Response: ", res);
+                toast.success("Registration Success");
+                this.setState({isRegister: true});
+                return res;
 
-
+            } else {
+                toast.error("Registration Failed");
+                console.log("Registration Failed");
+            }
         }).catch(error => {
-            console.log(error)
+            toast.error(error.response.data.response.message);
+            console.log(error.response.data.response.message)
         })
+
+        /*const requestOptions = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': '2020'
+            },
+            body: JSON.stringify(registerData),
+        };*/
+
 
         /*fetch('http://103.16.73.242:5000/api/registration', requestOptions)
             .then(response => {
@@ -130,8 +137,7 @@ class Registration extends React.Component {
                                     </div>
 
                                     <div className="card-body">
-                                        Response
-                                        Message: {printMessage && true ? printMessage.response ? printMessage.response.message : 'Success' : 'no data'}
+                                        Response Message: {printMessage && true ? printMessage.response ? printMessage.response.message : 'Success' : 'no data'}
                                     </div>
 
                                 </form>
