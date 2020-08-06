@@ -18,18 +18,20 @@ class Login extends React.Component {
 
         this.state = {
             email: '',
-            password:'',
-            errors: null
+            password: '',
+            errors: null,
+            isError: true
         }
     }
 
     handleChangeEmail = email => {
-        let prevState = {...this.state};
+        let prevState = { ...this.state };
 
         if (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(prevState.email) === false) {
-            prevState.errors = "Invalid Email"
+            prevState.errors = "Invalid Email";
         } else {
             prevState.errors = null
+            prevState.isError = false;
         }
 
         prevState[email.target.id] = email.target.value;
@@ -38,7 +40,7 @@ class Login extends React.Component {
     }
 
     handleChangePassword = password => {
-        let prevState = {...this.state};
+        let prevState = { ...this.state };
 
         if (password) {
             prevState.errors = "Invalid Email"
@@ -59,11 +61,17 @@ class Login extends React.Component {
 
                     <label htmlFor="Email">Email address</label>
 
-                    <input name='email' id='email' value={this.state.email} onChange={this.handleChangeEmail} type="email" className="form-control" placeholder=""/>
+                    <input name='email' autoComplete='off' id='email' value={this.state.email} onChange={this.handleChangeEmail} type="email" className="form-control" placeholder="" />
                     <div className="text-danger">{this.state.errors}</div>
-                   
+
                 </div>
-               {/* <input type="email" name='email' value={this.state.email} onChange={this.handleChangeEmail}/>*/}
+
+                <div className="form-group">
+                    <button type="submit" name="action" className={`btn btn-primary btn-block ${this.state.isError ? 'disabled' : ''}`}>
+                        Sign In
+                    </button>
+                </div>
+                {/* <input type="email" name='email' value={this.state.email} onChange={this.handleChangeEmail}/>*/}
 
             </div>
             /*<div className="container">

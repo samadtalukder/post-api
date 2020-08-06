@@ -49,8 +49,7 @@ class Registration extends React.Component {
             }
         }).catch(error => {
             if (error.response && error.response.status >= 400 && error.response.status < 500) {
-                toast.error(error.response.data.response.message);
-                console.log(error.response.data.response.message);
+                toast.error(error.response.data.message);
             } else {
                 toast.error('Something went wrong. please try again later!');
             }
@@ -90,6 +89,7 @@ class Registration extends React.Component {
 
         if (isRegister) {
             this.props.history.push("/verify");
+            //window.location.href = '/verify'
         }
 
         return (
@@ -132,6 +132,10 @@ class Registration extends React.Component {
                                             className="btn btn-primary btn-block"> Register
                                         </button>
                                         <ToastContainer />
+                                    </div>
+
+                                    <div className="card-body">
+                                        Response Message: {printMessage && true ? printMessage.response ? printMessage.response.message : 'Success' : 'no data'}
                                     </div>
 
                                 </form>
