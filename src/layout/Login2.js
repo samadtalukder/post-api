@@ -6,10 +6,33 @@ import axios from 'axios';
 const validEmailRegex = RegExp(
     /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 );
+
+
 const validateForm = errors => {
-    let valid = true;
-    Object.values(errors).forEach(val => val.length > 0 && (valid = false));
-    return valid;
+    // Object.values(errors).forEach(val => {
+    //     console.log(val);
+    //     // if (key > 0) {
+    //     //     console.log(errors.key);
+    //     //     return true
+    //     // }
+    // });
+    // return false;
+
+
+    switch (errors) {
+        case errors.Email:
+            errors.Email =
+                validEmailRegex.test(errors.Email) ? '' : 'Email is not valid!';
+            break;
+
+        case errors.Password:
+            errors.Password =
+                errors.Password.length < 8 ? 'Password must be at least 8 characters long!' : '';
+            break;
+
+        default:
+            break;
+    }
 };
 
 class Login2 extends React.Component {
@@ -28,30 +51,16 @@ class Login2 extends React.Component {
         }
     }
 
-    handleChange = (event) => {
-        event.preventDefault();
 
-        const {name, value} = event.target;
 
+    handleChange = (e) => {
+        e.preventDefault();
         let errors = this.state.errors;
 
-        switch (name) {
+        this.setState({ errors, [e.target.name]: e.target.value });
 
-            case 'Email':
-                errors.Email =
-                    validEmailRegex.test(value) ? '' : 'Email is not valid!';
-                break;
 
-            case 'Password':
-                errors.Password =
-                    value.length < 8 ? 'Password must be at least 8 characters long!' : '';
-                break;
 
-            default:
-                break;
-        }
-
-        this.setState({errors, [name]: value});
     }
 
     handleSubmit = (event) => {
@@ -68,39 +77,40 @@ class Login2 extends React.Component {
             Password: this.state.Password,
         })
 
-        if (validateForm(this.state.errors)) {
-            axios.post('http://103.16.73.242:5000/api/registration', data, {
-                headers: header
-            }).then(res => {
-                if (res.status === 200) {
-                    console.log(res.data)
-                    toast.success("Registration Success");
-                    this.setState({ isRegister: true });
-                    return res;
-                }
-            }).catch(error => {
-                if (error.response && error.response.status >= 400 && error.response.status < 500) {
-                    toast.error(error.response.data.message);
-                    console.log(error.response.data.message);
-                } else {
-                    console.log(error.response.data.message);
-                    toast.error('Something went wrong. please try again later!');
-                }
-            })
-            console.log(data)
-            console.info('Valid Form')
-        } else {
-            if (this.state.errors.Email === null || this.state.errors.Password === null) {
-                console.log('Invalid Form')
-            }
+        console.log('errors', validateForm(this.state.errors));
+        return;
 
-        }
+        if (validateForm(this.state.errors)) {
+            return toast.error('Invalid form')
+        };
+
+        axios.post('http://103.16.73.242:5000/api/registration', data, {
+            headers: header
+        }).then(res => {
+            if (res.status === 200) {
+                console.log(res.data)
+                toast.success("Registration Success");
+                this.setState({ isRegister: true });
+                return res;
+            }
+        }).catch(error => {
+            if (error.response && error.response.status >= 400 && error.response.status < 500) {
+                toast.error(error.response.data.message);
+                console.log(error.response.data.message);
+            } else {
+                console.log(error.response.data.message);
+                toast.error('Something went wrong. please try again later!');
+            }
+        })
+        console.log(data)
+        console.info('Valid Form')
     }
+
 
 
     render() {
 
-        const {errors} = this.state;
+        const { errors } = this.state;
 
         return (
             <div className='wrapper'>
@@ -113,14 +123,14 @@ class Login2 extends React.Component {
 
                         <div className='email'>
                             <label htmlFor="Email">Email</label>
-                            <input type='email' name='Email' onChange={this.handleChange} noValidate/>
+                            <input type='email' name='Email' onChange={this.handleChange} noValidate />
                             {errors.Email.length > 0 &&
-                            <span className='error'>{errors.Email}</span>}
+                                <span className='error'>{errors.Email}</span>}
                         </div>
 
                         <div className='password'>
                             <label htmlFor="Password">Password</label>
-                            <input type='password' name='Password' onChange={this.handleChange} noValidate/>
+                            <input type='password' name='Password' onChange={this.handleChange} noValidate />
                             {errors.Password.length > 0 && <span className='error'>{errors.Password}</span>}
                         </div>
 
