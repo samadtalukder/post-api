@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Joi from 'joi-browser';
+import { toast } from 'react-toastify';
 
 
 
@@ -39,7 +40,15 @@ class JoiForm extends Component {
         e.preventDefault();
         const errors = this.validate();
         this.setState({ errors: errors || {} });
+        if (errors) {
+            Object.values(errors).map(val => {
+                console.log(val);
+                toast.error('errors.email', String(val))
+            })
+            return;
+        };
 
+        const { data } = this.state;
         // call te backend api below
     };
 
@@ -62,18 +71,21 @@ class JoiForm extends Component {
 
         return (
             <div className='container'>
-                <div className="form-group">
-                    <label htmlFor="Email">Email address</label>
-                    <input name='Email' autoComplete='off' id='Email' value={data.Email} onChange={this.handleChange} type="email" className="form-control" placeholder="" />
-                    {errors.Email && <div className="text-danger">{errors.Email}</div>}
-                </div>
+                <form onSubmit={this.handleSubmit}>
+                    <div className="form-group">
+                        <label htmlFor="Email">Email address</label>
+                        <input name='Email' autoComplete='off' id='Email' value={data.Email} onChange={this.handleChange} className="form-control" placeholder="" />
+                        {errors.Email && <div className="text-danger">{errors.Email}</div>}
+                    </div>
 
-                <div className="form-group">
-                    <label htmlFor="Password">Password</label>
-                    <input name='Password' autoComplete='off' id='Password' value={data.Password} onChange={this.handleChange} type="password" className="form-control" placeholder="Enter password" />
-                    {errors.Password && <div className="text-danger">{errors.Password}</div>
-                    }
-                </div>
+                    <div className="form-group">
+                        <label htmlFor="Password">Password</label>
+                        <input name='Password' autoComplete='off' id='Password' value={data.Password} onChange={this.handleChange} type="password" className="form-control" placeholder="Enter password" />
+                        {errors.Password && <div className="text-danger">{errors.Password}</div>
+                        }
+                    </div>
+                    <button type='submit'>Submit</button>
+                </form>
             </div>
         );
     }

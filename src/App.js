@@ -10,6 +10,7 @@ import Login2 from "./layout/Login2";
 import FormTest from "./layout/FormTest";
 import FormTest2 from "./layout/FormTest2";
 import JoiForm from './layout/joiForm';
+import { ToastContainer } from 'react-toastify';
 
 class App extends Component {
 
@@ -18,7 +19,10 @@ class App extends Component {
 
         return (
             <Router>
+
                 <div>
+                    <ToastContainer />
+
                     <Switch>
                         <Route exact path='/' component={Home} />
                         <Route path='/login' component={JoiForm} />
