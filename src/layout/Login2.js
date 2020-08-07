@@ -110,7 +110,6 @@ class Login2 extends React.Component {
 
                     <form onSubmit={this.handleSubmit} noValidate>
 
-
                         <div className='email'>
                             <label htmlFor="Email">Email</label>
                             <input type='email' name='Email' onChange={this.handleChange} noValidate/>

@@ -10,16 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="solve error">
-      <change afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/Login2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/Login3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/Login4.js" afterDir="false" />
+    <list default="true" id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="login form add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Login2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Login2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +75,7 @@
       <workItem from="1596609296660" duration="6539000" />
       <workItem from="1596688544988" duration="15779000" />
       <workItem from="1596729097835" duration="12893000" />
+      <workItem from="1596768440011" duration="1315000" />
     </task>
     <task id="LOCAL-00001" summary="api add">
       <created>1595739945233</created>
@@ -139,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596710836308</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="login form add">
+      <created>1596768687308</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596768687309</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +165,8 @@
     <MESSAGE value="add axios" />
     <MESSAGE value="print error message using axios" />
     <MESSAGE value="solve error" />
-    <option name="LAST_COMMIT_MESSAGE" value="solve error" />
+    <MESSAGE value="login form add" />
+    <option name="LAST_COMMIT_MESSAGE" value="login form add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="403" y="198" width="615" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596529391352">
@@ -187,10 +189,10 @@
       <screen x="65" y="27" width="1301" height="741" />
     </state>
     <state x="346" y="159" width="728" height="475" key="MultipleFileMergeDialog/65.27.1301.741@65.27.1301.741" timestamp="1596710874904" />
-    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596703886167">
+    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596768696247">
       <screen x="65" y="27" width="1301" height="741" />
     </state>
-    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/65.27.1301.741@65.27.1301.741" timestamp="1596703886167" />
+    <state x="310" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/65.27.1301.741@65.27.1301.741" timestamp="1596768696247" />
     <state x="496" y="311" width="428" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596525909803">
       <screen x="65" y="27" width="1301" height="741" />
     </state>
