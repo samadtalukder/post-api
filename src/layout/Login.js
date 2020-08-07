@@ -1,16 +1,6 @@
 import React from "react";
 
 
-const validEmail = RegExp(
-    /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,15}/g
-);
-
-const validateForm = error => {
-    let valid = true;
-    Object.values(error).forEach(value => value.length > 0 && (valid = false));
-    return valid;
-}
-
 class Login extends React.Component {
 
     constructor(props) {
@@ -35,6 +25,7 @@ class Login extends React.Component {
         }
 
         prevState[email.target.id] = email.target.value;
+        console.log(this.state.email)
         this.setState(prevState)
 
     }
@@ -57,6 +48,15 @@ class Login extends React.Component {
 
         return (
             <div className="container">
+                <div className="form-group">
+
+                    <label htmlFor="Email">Email address</label>
+
+                    <input name='email' autoComplete='off' id='email' value={this.state.email} onChange={this.handleChangeEmail} type="email" className="form-control" placeholder="" />
+                    <div className="text-danger">{this.state.errors}</div>
+
+                </div>
+
                 <div className="form-group">
 
                     <label htmlFor="Email">Email address</label>

@@ -36,8 +36,7 @@ class Registration extends React.Component {
         let data = JSON.stringify({
             Email: this.refs.Email.value,
             Password: this.refs.Password.value,
-        }
-        )
+        })
 
         axios.post('http://103.16.73.242:5000/api/registration', data, {
             headers: header

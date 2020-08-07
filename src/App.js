@@ -6,6 +6,9 @@ import Login from "./layout/Login";
 import Registration from "./layout/Registration";
 import VerifyEmail from "./layout/VerifyEmail";
 import ForgotPassword from "./layout/ForgotPassword";
+import Login2 from "./layout/Login2";
+import FormTest from "./layout/FormTest";
+import FormTest2 from "./layout/FormTest2";
 
 class App extends Component {
 
@@ -17,7 +20,7 @@ class App extends Component {
                 <div>
                     <Switch>
                         <Route exact path='/' component={Home}/>
-                        <Route path='/login' component={Login}/>
+                        <Route path='/login' component={Login2}/>
                         <Route path='/registration' component={Registration}/>
                         <Route path='/verify' component={VerifyEmail}/>
                         <Route path='/forgot_password' component={ForgotPassword}/>
