@@ -43,7 +43,7 @@ class JoiForm extends Component {
         if (errors) {
             Object.values(errors).map(val => {
                 console.log(val);
-                toast.error('errors.email', String(val))
+                toast.error(val)
             })
             return;
         };
