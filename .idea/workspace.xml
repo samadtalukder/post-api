@@ -10,9 +10,126 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="login form add">
+    <list default="true" id="63d6b6d6-ab0a-4574-9e58-d0941f568bba" name="Default Changelist" comment="login form some modify">
+      <change afterPath="$PROJECT_DIR$/src/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/about/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/about/counter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/banner/accordion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/banner/add_property.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/banner/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/banner/banner_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/banner/bradcam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/banner/contact_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/banner/home_details.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/banner/info_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/banner/property.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/banner/property_details.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/banner/testmonial.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/blog_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/blog_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/blog_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/blog_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/learn_about_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/single_blog_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/single_blog_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/single_blog_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/single_blog_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/single_blog_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/blog/slide_thumb_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/case/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/case/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/case/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/case/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/case/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/case/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/case/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/case/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/case/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/case/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/case/testmonial.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/comment/comment_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/comment/comment_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/comment/comment_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/a2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/disabled-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/disabled-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/f3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/f5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/f8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/g1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/g2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/g3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/g4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/g5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/g6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/g7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/g8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/primary-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/primary-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/success-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/elements/success-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/footer_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/post_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/post_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/post_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/post_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/post_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/post_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/post_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/post_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/post_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/post_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/post/preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/property/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/property/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/property/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/property/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/property/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/property/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/service/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/svg_icon/bath.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/svg_icon/bed.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/svg_icon/color_bath.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/svg_icon/color_bed.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/svg_icon/color_box.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/svg_icon/location.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/svg_icon/quote.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/svg_icon/square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/team/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/team/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/team/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/team/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/HomeProperties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/HomeSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Login1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/NavBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/Login2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Login2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/joiForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/joiForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +139,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -42,14 +159,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/layout" />
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/css" />
+      <recent name="$PROJECT_DIR$/src/layout" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -75,7 +196,12 @@
       <workItem from="1596609296660" duration="6539000" />
       <workItem from="1596688544988" duration="15779000" />
       <workItem from="1596729097835" duration="12893000" />
-      <workItem from="1596768440011" duration="1315000" />
+      <workItem from="1596768440011" duration="5918000" />
+      <workItem from="1596872298844" duration="8741000" />
+      <workItem from="1597344590915" duration="456000" />
+      <workItem from="1597429436503" duration="600000" />
+      <workItem from="1597478610941" duration="2387000" />
+      <workItem from="1597681659617" duration="6897000" />
     </task>
     <task id="LOCAL-00001" summary="api add">
       <created>1595739945233</created>
@@ -140,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596768687309</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="login form some modify">
+      <created>1596808030497</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596808030497</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,13 +299,18 @@
     <MESSAGE value="print error message using axios" />
     <MESSAGE value="solve error" />
     <MESSAGE value="login form add" />
-    <option name="LAST_COMMIT_MESSAGE" value="login form add" />
+    <MESSAGE value="login form some modify" />
+    <option name="LAST_COMMIT_MESSAGE" value="login form some modify" />
   </component>
   <component name="WindowStateProjectService">
     <state x="403" y="198" width="615" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596529391352">
       <screen x="65" y="27" width="1301" height="741" />
     </state>
     <state x="403" y="198" width="615" height="396" key="#com.intellij.fileTypes.FileTypeChooser/65.27.1301.741@65.27.1301.741" timestamp="1596529391352" />
+    <state x="448" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597478635446">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state x="448" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.27.1301.741@65.27.1301.741" timestamp="1597478635446" />
     <state x="487" y="140" width="447" height="513" key="FileChooserDialogImpl" timestamp="1595700764853">
       <screen x="65" y="27" width="1301" height="741" />
     </state>
@@ -181,6 +319,22 @@
       <screen x="65" y="27" width="1301" height="741" />
     </state>
     <state x="576" y="296" key="Github.ShareDialog/65.27.1301.741@65.27.1301.741" timestamp="1595700784224" />
+    <state width="1278" height="184" key="GridCell.Tab.0.bottom" timestamp="1597480363068">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state width="1278" height="184" key="GridCell.Tab.0.bottom/65.27.1301.741@65.27.1301.741" timestamp="1597480363068" />
+    <state width="1278" height="184" key="GridCell.Tab.0.center" timestamp="1597480363066">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state width="1278" height="184" key="GridCell.Tab.0.center/65.27.1301.741@65.27.1301.741" timestamp="1597480363066" />
+    <state width="1278" height="184" key="GridCell.Tab.0.left" timestamp="1597480363063">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state width="1278" height="184" key="GridCell.Tab.0.left/65.27.1301.741@65.27.1301.741" timestamp="1597480363063" />
+    <state width="1278" height="184" key="GridCell.Tab.0.right" timestamp="1597480363067">
+      <screen x="65" y="27" width="1301" height="741" />
+    </state>
+    <state width="1278" height="184" key="GridCell.Tab.0.right/65.27.1301.741@65.27.1301.741" timestamp="1597480363067" />
     <state x="185" y="86" width="1040" height="622" key="MergeDialog" timestamp="1596710874901">
       <screen x="65" y="27" width="1301" height="741" />
     </state>
@@ -201,9 +355,9 @@
       <screen x="65" y="27" width="1301" height="741" />
     </state>
     <state x="379" y="175" width="672" height="677" key="run.anything.popup/65.27.1301.741@65.27.1301.741" timestamp="1596717286725" />
-    <state x="378" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1596741915590">
+    <state x="378" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1596888867347">
       <screen x="65" y="27" width="1301" height="741" />
     </state>
-    <state x="378" y="89" width="672" height="678" key="search.everywhere.popup/65.27.1301.741@65.27.1301.741" timestamp="1596741915590" />
+    <state x="378" y="89" width="672" height="678" key="search.everywhere.popup/65.27.1301.741@65.27.1301.741" timestamp="1596888867347" />
   </component>
 </project>

@@ -1,35 +1,40 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Header from "./Header";
+import NavBar from "./NavBar";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faEnvelope, faPhoneAlt} from "@fortawesome/free-solid-svg-icons";
+import {faFacebookSquare, faLinkedin, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import Footer from "./Footer";
+import HomeSearch from "./HomeSearch";
+import HomeProperties from "./HomeProperties";
 
 class Home extends React.Component {
     render() {
         return (
-            <nav className="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
-                <div className="container">
-                    <button className="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                            data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
 
-                    <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
-                        <ul className="navbar-nav">
+            <div>
+                <header>
 
-                            <li className="nav-item">
-                                <Link to={'/'} className="nav-link active">Home</Link>
-                            </li>
+                    <div className="header-area ">
 
-                            <li className="nav-item dropdown ">
-                                <Link to={'/login'} className="nav-link">Login</Link>
-                            </li>
+                        <Header/>
 
-                        </ul>
+                        <NavBar/>
+
                     </div>
 
-                </div>
-            </nav>
+                </header>
+
+                <HomeSearch/>
+
+                <HomeProperties/>
+
+                <Footer/>
+
+            </div>
+
+
         )
     }
 }

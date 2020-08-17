@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Joi from 'joi-browser';
 import { toast } from 'react-toastify';
+import axios from "axios";
 
 
 
@@ -46,10 +47,34 @@ class JoiForm extends Component {
                 toast.error(val)
             })
             return;
-        };
+        }
 
         const { data } = this.state;
+        console.log(data.Email)
         // call te backend api below
+
+        const header = {
+            'Content-Type': 'application/json',
+            'x-api-key': '2020'
+
+        };
+
+        axios.post('http://103.16.73.242:5000/api/registration', data, {
+            headers: header
+        }).then(res => {
+            if (res.status === 200) {
+                console.log(res)
+                toast.success("Registration Success");
+                this.setState({ isRegister: true });
+                return res;
+            }
+        }).catch(error => {
+            if (error.response && error.response.status >= 400 && error.response.status < 500) {
+                toast.error(error.response.data.message);
+            } else {
+                toast.error('Something went wrong. please try again later!');
+            }
+        })
     };
 
     handleChange = ({ currentTarget: input }) => {

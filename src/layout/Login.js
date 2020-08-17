@@ -1,6 +1,27 @@
-import React from "react";
-import Joi from "joi-browser";
+import React, {Component} from 'react';
+import axios from "axios";
+import {toast} from "react-toastify";
 
+
+const emailRegex = RegExp(
+    /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+);
+
+const formValid = ({formErrors, ...rest}) => {
+    let valid = true;
+
+    // validate form errors being empty
+    Object.values(formErrors).forEach(val => {
+        val.length > 0 && (valid = false);
+    });
+
+    // validate the form was filled out
+    Object.values(rest).forEach(val => {
+        val === null && (valid = false);
+    });
+
+    return valid;
+};
 
 class Login extends React.Component {
 
@@ -8,145 +29,139 @@ class Login extends React.Component {
         super(props);
 
         this.state = {
-            email: {
-                value: '',
-                error: true
-            },
-            password: {
-                value: '',
-                error: null
-            },
-            errors: {},
-            isError: true
-        }
-    }
 
-    handleChangeEmail = e => {
-        const rex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-        this.setState({
-            email: {
-                value: e.target.value,
-                error: rex.test(e.target.value)
+            email: null,
+            password: null,
+
+            formErrors: {
+                email: "",
+                password: ""
             }
-        });
-    }
-    handleChangePassword = e => {
-        this.setState({
-            password: {
-                value: e.target.value,
-                error: e.target.value.length > 7 ? null : 'pass 8 long'
-            }
-        });
+        };
     }
 
-    validate = (email, password) => {
-        const err = { ...this.state.errors };
-        if (email && /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email) === false) {
-            err.email = "Invalid Email";
-        } else if (password && password.length < 8) {
-            err.password = 'password must ne 8 character long'
-        }
-        return err;
-    }
 
-    handleChangePassword = password => {
-        let prevState = { ...this.state };
+    handleSubmit = e => {
+        e.preventDefault();
 
-        if (password) {
-            prevState.errors = "Invalid Email"
+        if (formValid(this.state)) {
+
+            const header = {
+                'Content-Type': 'application/json',
+                'x-api-key': '2020'
+
+            };
+
+            let data = JSON.stringify({
+                Email: this.state.email,
+                Password: this.state.password,
+            });
+
+            console.log(data)
+
+            axios.post('http://103.16.73.242:5000/api/registration', data, {headers: header})
+                .then(res => {
+                    console.log(res)
+                    if (res.status === 200) {
+                        console.log(res)
+                        toast.success("Registration Success");
+                        this.setState({isRegister: true});
+                        return res;
+                    }
+                }).catch(error => {
+                if (error.response && error.response.status >= 400 && error.response.status < 500) {
+                    console.log(error.response);
+                    console.log(error.response.data.response.message);
+                    toast.error(error.response.data.response.message);
+                } else {
+
+                    toast.error('Something went wrong. please try again later!');
+                }
+            });
+
+            console.log(`
+            Email: ${this.state.email} 
+            Password: ${this.state.password}
+      `);
+
         } else {
-            prevState.errors = null
+            toast.error("Please Enter Valid Email and Password")
+            console.error("FORM INVALID - DISPLAY ERROR MESSAGE");
+        }
+    };
+
+    handleChange = e => {
+        e.preventDefault();
+
+        const {name, value} = e.target;
+
+        let formErrors = {...this.state.formErrors};
+
+        switch (name) {
+
+            case "email":
+                formErrors.email = emailRegex.test(value)
+                    ? ""
+                    : "invalid email address";
+                break;
+
+            case "password":
+                formErrors.password =
+                    value.length < 6 ? "minimum 6 characters required" : "";
+                break;
+
+            default:
+                break;
         }
 
-        prevState[password.target.id] = password.target.value;
-        this.setState(prevState)
+        this.setState({formErrors, [name]: value});
+    };
 
-    }
 
     render() {
-        const { errors } = this.state;
-        console.log(this.state);
+        const {formErrors} = this.state;
+
         return (
-            <div className="container">
+            <div className="wrapper">
+                <div className="form-wrapper">
+                    <h1>Create Account</h1>
+                    <form onSubmit={this.handleSubmit} noValidate>
 
-                {/* <div className="form-group">
-
-                    <label htmlFor="Email">Email address</label>
-
-                    <input name='email' autoComplete='off' id='email' onChange={this.handleChangeEmail} type="email" className="form-control" placeholder="" />
-                    <div className="text-danger">{this.state.email.error ? null : "Invalid Email"}</div>
-
-                </div> */}
-
-                <div className="form-group">
-
-                    <label htmlFor="password">Password</label>
-
-                    <input name='password' autoComplete='off' id='password' onChange={this.handleChangePassword} type="password" className="form-control" placeholder="Enter password" />
-                    <div className="text-danger">{this.state.password.error}</div>
-
-                </div>
-
-                <div className="form-group">
-                    <button type="submit" name="action" className={`btn btn-primary btn-block ${this.state.isError ? 'disabled' : ''}`}>
-                        Sign In
-                    </button>
-                </div>
-                {/* <input type="email" name='email' value={this.state.email} onChange={this.handleChangeEmail}/>*/}
-
-            </div>
-            /*<div className="container">
-    
-                <div className="row justify-content-center">
-    
-                    <div className="col-md-6">
-    
-                        <div className="card">
-    
-                            <header className="card-header">
-    
-                                <h4 className="card-title mt-2">Sign In</h4>
-    
-                            </header>
-    
-                            <article className="card-body">
-    
-                                <form>
-    
-                                    <div className="form-group">
-    
-                                        <label htmlFor="Email">Email address</label>
-    
-                                        <input ref="Email" type="email" className="form-control" placeholder=""/>
-    
-                                    </div>
-    
-                                    <div className="form-group">
-    
-                                        <label htmlFor="Password">Password</label>
-    
-                                        <input ref="Password" className="form-control" type="password"/>
-    
-                                    </div>
-    
-                                    <div className="form-group">
-                                        <button type="submit" name="action" className="btn btn-primary btn-block"> Sign
-                                            In
-                                        </button>
-                                    </div>
-    
-    
-                                </form>
-    
-                            </article>
-    
+                        <div className="email">
+                            <label htmlFor="email">Email</label>
+                            <input
+                                className={formErrors.email.length > 0 ? "error" : null}
+                                placeholder="Email"
+                                type="email"
+                                name="email"
+                                noValidate
+                                onChange={this.handleChange}
+                            />
+                            {formErrors.email.length > 0 && (
+                                <span className="errorMessage">{formErrors.email}</span>
+                            )}
                         </div>
-    
-                    </div>
-    
+                        <div className="password">
+                            <label htmlFor="password">Password</label>
+                            <input
+                                className={formErrors.password.length > 0 ? "error" : null}
+                                placeholder="Password"
+                                type="password"
+                                name="password"
+                                noValidate
+                                onChange={this.handleChange}
+                            />
+                            {formErrors.password.length > 0 && (
+                                <span className="errorMessage">{formErrors.password}</span>
+                            )}
+                        </div>
+                        <div className="createAccount">
+                            <button type="submit">Create Account</button>
+                            <small>Already Have an Account?</small>
+                        </div>
+                    </form>
                 </div>
-    
-            </div>*/
+            </div>
         );
     }
 }

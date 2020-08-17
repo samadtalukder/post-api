@@ -2,7 +2,7 @@ import React, { Component, createRef } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from "./layout/Home";
-import Login from "./layout/Login";
+import Login1 from "./layout/Login1";
 import Registration from "./layout/Registration";
 import VerifyEmail from "./layout/VerifyEmail";
 import ForgotPassword from "./layout/ForgotPassword";
@@ -11,6 +11,7 @@ import FormTest from "./layout/FormTest";
 import FormTest2 from "./layout/FormTest2";
 import JoiForm from './layout/joiForm';
 import { ToastContainer } from 'react-toastify';
+import Login from "./layout/Login";
 
 class App extends Component {
 
@@ -25,7 +26,7 @@ class App extends Component {
 
                     <Switch>
                         <Route exact path='/' component={Home} />
-                        <Route path='/login' component={JoiForm} />
+                        <Route path='/login' component={Login} />
                         <Route path='/registration' component={Registration} />
                         <Route path='/verify' component={VerifyEmail} />
                         <Route path='/forgot_password' component={ForgotPassword} />
