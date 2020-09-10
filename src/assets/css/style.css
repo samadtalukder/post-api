@@ -2192,7 +2192,7 @@ h3 {
 .contact_form_quote .form_wrap h3 {
   font-size: 46px;
   font-weight: 300;
-  color: #001D38;
+  color: #bac4ce;
   margin-bottom: 51px;
 }
 
@@ -4723,6 +4723,61 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
   margin-bottom: 20px;
 }
 
+.color-d {
+  color: #adadad;
+}
+
+.color-text-a {
+  color: #555555;
+}
+
+.color-text-p {
+  color: #ffffff;
+}
+
+.btn {
+  transition: .5s ease;
+}
+
+.btn.btn-a, .btn.btn-b {
+  border-radius: 0;
+  padding: 1.3rem;
+  letter-spacing: .05rem;
+  font-size: 1.5rem;
+}
+
+.btn.btn-a {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn.btn-a:hover {
+  background-color: #1f95a2;
+  color: #ffffff;
+}
+
+.btn.btn-b {
+  background-color: #2eca6a;
+  color: #000000;
+}
+
+.btn.btn-b:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn.btn-b-n {
+  background-color: #1f95a2;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.btn.btn-b-n:hover {
+  background-color: #1f95a2;
+  color: #ffffff;
+}
+
+
 /* line 87, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_bradcam.scss */
 .popup_box input::placeholder {
   color: #919191;
@@ -5407,12 +5462,12 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 
 /* line 61, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_contact.scss */
 .form-contact .form-control {
-  border: 1px solid #e5e6e9;
+  border: 1px solid #ffffff;
   border-radius: 0px;
-  height: 48px;
+  height: 40px;
   padding-left: 18px;
   font-size: 13px;
-  background: transparent;
+  background: #FFFFFF;
 }
 
 /* line 69, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_contact.scss */
@@ -5424,7 +5479,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 /* line 74, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_contact.scss */
 .form-contact .form-control::placeholder {
   font-weight: 300;
-  color: #999999;
+  color: #ffffff;
 }
 
 /* line 80, ../../Arafath/CL/CL October/217. Real Estate/HTML/scss/_contact.scss */

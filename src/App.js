@@ -1,16 +1,11 @@
-import React, { Component, createRef } from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Home from "./layout/Home";
-import Login1 from "./layout/Login1";
 import Registration from "./layout/Registration";
 import VerifyEmail from "./layout/VerifyEmail";
 import ForgotPassword from "./layout/ForgotPassword";
-import Login2 from "./layout/Login2";
-import FormTest from "./layout/FormTest";
-import FormTest2 from "./layout/FormTest2";
-import JoiForm from './layout/joiForm';
-import { ToastContainer } from 'react-toastify';
+import {ToastContainer} from 'react-toastify';
 import Login from "./layout/Login";
 
 class App extends Component {
