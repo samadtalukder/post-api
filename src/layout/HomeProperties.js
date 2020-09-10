@@ -73,6 +73,7 @@ class HomeProperties extends Component {
 
                                             <img src={tolet.length > 0 ? tolet.IMGURL[0] : null} width="300px" height="300px" alt=""/>
 
+
                                         </div>
 
                                         <div className="property_content">
